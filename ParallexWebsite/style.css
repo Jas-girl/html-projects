@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bgimage1 {
+    background-image: url(images/image.png);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width:auto;
+
+}
+
+.bgbox {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    letter-spacing: 8px;
+}
+.bgtext{
+    background-color: grey;
+    padding: 20px;;
+    color:white;
+    box-shadow: 2px 2px 2px 2px  black;
+}
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+.section-light{
+    color:gray;
+}
+.bgimage2 {
+    background-image: url(images/image2.png);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width:auto;
+
+  
+
+}
+.bgtext1{
+    padding: 20px;
+   
+    color: white; /* Text color is white */
+    
+}
+.bgimage3{
+    background-image: url(images/image3.png);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    width: auto;
+}
