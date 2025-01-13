@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Weather Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;;
+        }
+        .content{
+            background:linear-gradient(rgb(80, 80, 235) 10%,white 60%,yellow 30%);
+            padding:50px;
+            display: flex;
+            gap:20px;
+            flex-direction: column;
+            h1{
+               font-size: 54px;
+            }
+        }
+        .input{
+            input{
+                width:100%;
+                padding:10px;
+            }
+        }
+        button{
+            background-color: green;
+            color: white;
+            padding:10px;
+            font-size: 24px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Static Weather App</h1>
+            <div class="input">
+                <h3>Enter the celcius degree or Fahrehnit degree</h3><br>
+                <input type="text" placeholder="Enter the celcius degree or Fahrehnit degree" id="value">
+            </div>
+            
+            <div class="btn"> <button id="buttonToggle">Change into Fahrehnit</button>
+                <button id="buttonToggle1">Change into Celcius</button></div>
+           
+            <p id="p1"></p>
+        </div>
+       
+    </div>
+   
+    <script>
+        const inputValue=document.getElementById("value");
+        const submitBtn=document.getElementById("buttonToggle");
+        const output=document.getElementById("p1");
+        submitBtn.addEventListener('click',()=>{
+            const f=parseFloat(inputValue.value *9/5)+32;
+           output.textContent=`The Fahrehnit is ${f} F`;
+        })
+        const submitBtn1=document.getElementById("buttonToggle1");
+        submitBtn1.addEventListener('click',()=>{
+           const c=parseFloat(inputValue.value-32 * 5/9);
+           console.log(c)
+           output.textContent=`The Celcius is ${c} C`;
+        })
+    </script>
+</body>
+</html>
