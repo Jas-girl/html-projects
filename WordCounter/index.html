@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+</head>
+<style>
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;;
+        }
+        .content{
+            background:linear-gradient(rgb(80, 80, 235) 10%,white 60%,yellow 30%);
+            padding:50px;
+            display: flex;
+            gap:20px;
+            flex-direction: column;
+            
+        }
+        .input{
+            input{
+                width:100%;
+                padding:10px;
+            }
+        }
+        button{
+            background-color: green;
+            color: white;
+            padding:5px;
+            font-size: 14px;;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="input">
+                <h1>Word Counter Tool</h1><br>
+                <input type="text" placeholder="Enter the words" id="value">
+            </div>
+            <button id="word">Word Count</button>
+            <button id="charact">Character Count</button>
+            <p id="p1">Word Count</p>
+            <p id="p2">Character Count</p>
+        </div>
+    
+</div>
+    <script>
+        const inputValue=document.getElementById("value");
+        var output=document.getElementById("p1");
+        const btn=document.getElementById("word");
+        btn.addEventListener('click',()=>{
+            var value=inputValue.value;
+            var arr=value.split(" ");
+            console.log(arr.length)
+            output.textContent=`The word count is: ${arr.length}`
+        })
+        var output1=document.getElementById("p2");
+        const btn1=document.getElementById("charact");
+        btn1.addEventListener('click',()=>{
+            var value1=inputValue.value;
+            var arr1=value1.split(''); 
+            console.log(arr1.length);
+            output1.textContent=`The character count is: ${arr1.length}`
+        })
+    </script>
+</body>
+</html>
