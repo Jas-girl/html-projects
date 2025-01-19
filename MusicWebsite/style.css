@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    top: 0;
+    display: flex;
+    background-color: #270082;
+
+    justify-content: space-around;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    /* width: 100%; */
+    margin: 0 auto;
+
+
+
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+
+}
+
+ol {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+ol li a {
+    text-decoration: none;
+    color: white;
+   padding-right: 10px;
+    cursor: pointer;
+}
+
+ol li a:hover {
+    text-shadow: 2px 2px grey;
+    text-decoration: underline;
+}
+
+/* homepage */
+.homepage {
+    background-image: url("images/hero_image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.homeimage {
+    padding: 70px;
+
+}
+
+.homecontent {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.homepage h1,
+.homepage2 h1 {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.homepage h5,
+.homepage2 h5 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.homepage p,
+.homepage2 p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/* music */
+.music {
+    background-color: rgba(40, 17, 84, 1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.musiccontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.musiccontent h2 {
+    font-size: 36px;
+}
+
+.musiccontent span img {
+    width: 37.3px;
+    height: 36.37px;
+}
+
+.musiccontent h5 {
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    padding: 20px;
+}
+
+.musiccontent p {
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    padding: 20px 80px 20px 80px;
+
+}
+
+.btn {
+    padding: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-top: 20px;
+    color: white;
+
+}
+.btn:hover{
+    box-shadow: 2px 2px 2px white;
+    background-color: rgb(134, 8, 8);
+}
+
+#p1 {
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.ipadiphone img {
+    margin-top: -500px;
+    position: relative;
+    top: 500px;
+    width: 500px;
+    height: 500px;
+}
+
+/*movie*/
+.movie {
+    padding-top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.moviecontent {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.moviecontent p {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.moviecontent .btn {
+    background-color: #270082;
+    cursor: pointer;
+}
+.moviecontent .btn:hover{
+    background-color: #591ce6;
+    box-shadow: 2px 2px 2px black;
+}
+
+.moviecontent .ipad img {
+    width: 800px;
+
+}
+
+.homepage2 {
+    background-image: url(images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    gap: 20px;
+    margin: 50px auto;
+    display: grid;
+    max-width: 1100px;
+    grid-template-rows: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card_content .content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.card_content .content h3 {
+
+    font-size: 24px;
+    font-weight: 700;
+
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.card_content .content p {
+
+    font-size: 14px;
+    font-weight: 400;
+    word-spacing: 5px;
+    margin-bottom: 20px;
+
+}
+
+.card_content .content button {
+    margin-top: 40px;
+    background: rgba(55, 0, 142, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card_content .content button:hover {
+   
+        background-color: #591ce6;
+        box-shadow: 2px 2px 2px black;
+  
+}
+
+footer {
+    background: rgba(27, 0, 88, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer {
+    margin: 50px auto;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content ol {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+.footer_content ol li {
+    list-style: none;
+}
+
+.copyright {
+    background: rgba(39, 0, 130, 1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    p {
+        font-size: 14px;
+    }
+
+}
+
+@media ((min-width:600px) and (max-width:1100px)) {
+
+    .musiccontent {
+        padding: 70px
+    }
+
+    .btn {
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .musiccontent p {
+        font-size: 12px;
+    }
+
+    .ipadiphone img {
+        margin-top: -200px;
+        top: 200px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .movie {
+
+        padding-top: 120px;
+
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .moviecontent .ipad img {
+        width: 700px;
+
+    }
+
+    .card_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_content .image img {
+        max-width: 100%;
+    }
+
+    .card_content .content {
+        padding: 20px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width:600px) {
+    .btn {
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    header {
+
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 20px;
+
+    }
+
+    header ol li {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .homeimage {
+        padding: 50px;
+    }
+
+    .homepage h1,
+    .homepage2 h1 {
+        font-size: 44px;
+    }
+
+    .homepage p,
+    .homepage2 p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .musiccontent {
+        padding: 40px;
+    }
+
+    .musiccontent h2 {
+        font-size: 26px;
+    }
+
+    .musiccontent span img {
+        width: 27.3px;
+        height: 26.37px;
+    }
+
+    .musiccontent h5 {
+
+        font-size: 14px;
+        padding: 10px;
+
+    }
+
+    .musiccontent p {
+
+        font-size: 12px;
+        padding: 0px 20px 0px 20px;
+
+    }
+
+    .ipadiphone img {
+        margin-top: -150px;
+        position: relative;
+        top: 150px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .movie {
+        padding-top: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .moviecontent {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .moviecontent p {
+
+        padding: 0px;
+    }
+
+    .moviecontent .btn {
+        padding: 5px;
+        font-size: 12px;
+        background-color: #270082;
+    }
+
+    .moviecontent .ipad img {
+        width: 300px;
+
+    }
+
+    .card {
+        margin: 20px auto;
+        gap: 15px;
+       
+    }
+
+    .card_content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_content .image img {
+        max-width: 100%;
+    }
+
+    .card_content .content h3 {
+        font-size: 20px;
+    }
+
+    .card_content .content p {
+        font-size: 12px;
+        word-spacing: 3px;
+    }
+
+    .card_content .content button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    footer {
+
+        justify-content: left;
+        align-content: flex-start;
+        padding: 0;
+
+    }
+
+    .footer {
+        align-items: flex-start;
+        grid-template-columns: 300px;
+        padding: 10px;
+
+
+    }
+
+    .footer_content ol {
+        margin: 0;
+        padding: 5px;
+      
+    }
+
+    .footer_content ol li {
+        font-size: 14px;
+       
+    }
+}
